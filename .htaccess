@@ -1,0 +1,47 @@
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^60-amper-aku-fiyatlari$  akuler_60ah.php [NC,L]
+RewriteRule ^72-amper-aku-fiyatlari$  akuler_72ah.php [NC,L]
+RewriteRule ^90-amper-aku-fiyatlari$  akuler_90ah.php [NC,L]
+RewriteRule ^105-amper-aku-fiyatlari$  akuler_105ah.php [NC,L]
+RewriteRule ^135-amper-aku-fiyatlari$  akuler_135ah.php [NC,L]
+RewriteRule ^180-amper-aku-fiyatlari$  akuler_180ah.php [NC,L]
+
+
+RewriteRule ^start-stop-efb-agm-aku-fiyatlari$  efb_agm_akuler.php [NC,L]
+RewriteRule ^60-amper-agm-aku-fiyatlari$  akuler_60ah_agm.php [NC,L]
+RewriteRule ^60-amper-efb-aku-fiyatlari$  akuler_60ah_efb.php [NC,L]
+RewriteRule ^70-amper-agm-aku-fiyatlari$  akuler_70ah_agm.php [NC,L]
+RewriteRule ^72-amper-efb-aku-fiyatlari$  akuler_70ah_efb.php [NC,L]
+RewriteRule ^80-amper-agm-aku-fiyatlari$  akuler_80ah_agm.php [NC,L]
+RewriteRule ^95-amper-agm-aku-fiyatlari$  akuler_95ah_agm.php [NC,L]
+
+
+
+RewriteRule ^45-55-66-80-amper-aku-fiyatlari$  diger_akuler.php [NC,L]
+RewriteRule ^45-amper-dar-aku-fiyatlari$  akuler_45ah.php [NC,L]
+RewriteRule ^50-amper-kare-aku-fiyatlari$  akuler_50ah.php [NC,L]
+RewriteRule ^55-amper-dar-aku-fiyatlari$  akuler_55ah.php [NC,L]
+RewriteRule ^66-amper-alçak-aku-fiyatlari$  akuler_66ah.php [NC,L]
+RewriteRule ^80-amper-alçak-aku-fiyatlari$  akuler_80ah.php [NC,L]
+RewriteRule ^100-amper-alçak-aku-fiyatlari$  akuler_100ah.php [NC,L]
+
+
+
+
+
+RewriteRule ^akunun-bittigini-nasil-anlariz$  akunun_bittigini_nasil.php [NC,L]
+RewriteRule ^aku-secimi-nasil-yapilir$  aku_secimi_nasil.php [NC,L]
+RewriteRule ^aku-omru-uzar-mi$  aku_omru.php [NC,L]
+RewriteRule ^akunun-bittigini-gösteren-isaretler$  akunun_bittigini_isaretler.php [NC,L]
+RewriteRule ^aku-alacaklarin-bilmesi-gerekenler$  aku_alacaklara_bilgi.php [NC,L]
+
+RewriteRule ^sik-sorulan-sorular$  sik-sorulan-sorular.php [NC,L]
+RewriteRule ^anasayfa$  index.php [NC,L]
+RewriteRule ^amir-samil-aku-hakkimizda$  hakkimizda.php [NC,L]
+
+
+
